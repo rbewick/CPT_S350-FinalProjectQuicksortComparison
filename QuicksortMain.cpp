@@ -8,26 +8,23 @@ int main(int argc, char *argv[])
     std::cin >> size;
 
     //HOARES PARTITION TEST:
-    /*
+    
     HoaresTestSorted(size);
     HoaresTestReverse(size);
     HoaresTestRandom(size);
-    HoaresTestRepeating(size);*/
+    HoaresTestRepeating(size);
     
     //LOMUTOS PARTITION TEST:
-    /*
     LomutoTestSorted(size);
     LomutoTestReverse(size);
     LomutoTestRandom(size);
     LomutoTestRepeating(size);
-    */
 
     // RANDOM LOMUTOS TEST:
-    /*
     RandomLomutoTestSorted(size);
     RandomLomutoTestReverse(size);
     RandomLomutoTestRandom(size);
-    RandomLomutoTestRepeating(size);*/
+    RandomLomutoTestRepeating(size);
 
     //RANDOM HOARES TEST:
     RandomHoaresTestSorted(size);
