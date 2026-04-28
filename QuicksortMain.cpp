@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
     RandomHoaresTestRandom(size);
     RandomHoaresTestRepeating(size);
     
+    //Dual pivot quicksort 
     return 0;
     
 }

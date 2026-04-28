@@ -6,9 +6,6 @@
 #include <ctime>
 #include <cstdlib>
 
-#include "sortedArray_MDeSmet.h"
-#include "reverseSortedArray_VBarrios.h"
-#include "randomArray_RBewick.h"
 #include "hq.h"
 
 using namespace std;
@@ -82,16 +79,16 @@ void DualPivotQuickSort(vector<int> &A, int p, int r)
 int main()
 {
     int max = 1000000;
-    /*
-    Test:
+    
+    //Test:
     vector<int> B = {12, 34, 1, 2, 3, 4, 24, 8, 42, 75, 29, 77, 38, 57};
     DualPivotQuickSort(B, 0, B.size()-1);   
     for(int i = 0; i < B.size(); i++) 
     {
         cout << B[i] << " ";
-    }*/
+    }
 
-    /*
+    
     cout << "Results Using DualPivotQuickSort With Lomuto Partitioning" << endl;
 
     cout << "Sorted Array Results: - - - - - - - - - - - - - - - - - - -" << endl;
@@ -99,7 +96,7 @@ int main()
     {
         int size = i;
         vector<int> A(size);
-        sortedArray(A, size);
+        sortedArray(size);
         vector<int> B = A;
         auto start = high_resolution_clock::now();
         DualPivotQuickSort(B, 0, B.size()-1);    
@@ -117,7 +114,7 @@ int main()
     {
         int size = i;
         vector<int> A(size);
-        generateReverseSortedArray(A, size);
+        generateReverseSortedArray(size);
         vector<int> B = A;
         auto start = high_resolution_clock::now();
         DualPivotQuickSort(B, 0, B.size()-1);    
@@ -134,7 +131,6 @@ int main()
     {
         int size = i;
         vector<int> A = randomArray(size);
-        //randomArray(A, size);
         vector<int> B = A;
         auto start = high_resolution_clock::now();
         DualPivotQuickSort(B, 0, B.size()-1);    
@@ -160,7 +156,6 @@ int main()
         cout << "Execution Time: "<< duration.count() <<" microseconds" << endl << "Array Size: " << "items " << A.size() << endl << endl;
     }
     cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -" << endl << endl;
-    
-    */
+
     return 0;
 }

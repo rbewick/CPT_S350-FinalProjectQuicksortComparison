@@ -137,6 +137,7 @@ void HoaresTestRepeating(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Repeating Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
 }
 
 void LomutoTestRepeating(int size)
@@ -153,6 +154,8 @@ void LomutoTestRepeating(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Repeating Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
 }
 
 void HoaresTestSorted(int size)
@@ -168,6 +171,8 @@ void HoaresTestSorted(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 
@@ -184,6 +189,8 @@ void LomutoTestSorted(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 
@@ -200,6 +207,8 @@ void HoarsTestReverse(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Reverse Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 
@@ -216,6 +225,8 @@ void LomutoTestReverse(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Reverse Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 
@@ -232,6 +243,8 @@ void HoaresTestRandom(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Random Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 
@@ -248,6 +261,8 @@ void LomutoTestRandom(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Random Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 
@@ -297,6 +312,8 @@ void RandomLomutoTestSorted(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 
 }
@@ -313,6 +330,8 @@ void RandomLomutoTestReverse(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Reverse Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 void RandomLomutoTestRandom(int size)
@@ -328,6 +347,8 @@ void RandomLomutoTestRandom(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Random Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 void RandomLomutoTestRepeating(int size)
@@ -344,6 +365,8 @@ void RandomLomutoTestRepeating(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Repeating Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
 }
 
 
@@ -387,6 +410,8 @@ void RandomHoaresTestSorted(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 void RandomHoaresTestReverse(int size)
@@ -402,6 +427,8 @@ void RandomHoaresTestReverse(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Reverse Sorted Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 void RandomHoaresTestRandom(int size)
@@ -417,6 +444,8 @@ void RandomHoaresTestRandom(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Random Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
     //////////
 }
 void RandomHoaresTestRepeating(int size)
@@ -433,4 +462,6 @@ void RandomHoaresTestRepeating(int size)
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> elapsed = end - start;
     std::cout << "Repeating Array Execution time: " << elapsed.count() << " microseconds\n";
+    std::cout << "-----------------------------------------------------------------------\n";
+
 }
