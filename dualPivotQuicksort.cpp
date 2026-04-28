@@ -11,7 +11,7 @@
 using namespace std;
 using namespace std::chrono;
 
-int partitionFunction(vector<int> &A, int p, int r, int *pivotLeft)
+int dualPivotPartitionFunction(vector<int> &A, int p, int r, int *pivotLeft)
 {
     if(A[p] > A[r])
     {
@@ -65,7 +65,7 @@ void DualPivotQuickSort(vector<int> &A, int p, int r)
     {
         int pivotLeft;
         int pivotRight;
-        pivotRight = partitionFunction(A, p, r, &pivotLeft);
+        pivotRight = dualPivotPartitionFunction(A, p, r, &pivotLeft);
 
         DualPivotQuickSort(A, p, pivotLeft-1);
         DualPivotQuickSort(A, pivotLeft + 1, pivotRight - 1);
@@ -76,7 +76,7 @@ void DualPivotQuickSort(vector<int> &A, int p, int r)
 
 
 
-int main()
+void dualPivotTestsAll()
 {
     int max = 1000000;
     
@@ -122,7 +122,7 @@ int main()
 
         auto duration = duration_cast<microseconds>(stop - start);
         cout << "Execution Time: "<< duration.count() <<" microseconds" << endl << "Array Size: " << "items " << A.size() << endl << endl;
-
+    }
     cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -" << endl << endl;
 
     
@@ -157,5 +157,4 @@ int main()
     }
     cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -" << endl << endl;
 
-    return 0;
 }

@@ -36,4 +36,13 @@ void RandomHoaresTestReverse(int size);
 void RandomHoaresTestRandom(int size);
 void RandomHoaresTestRepeating(int size);
 
+int dualPivotPartitionFunction(std::vector<int> &A, int p, int r, int *pivotLeft);
+void DualPivotQuickSort(std::vector<int> &A, int p, int r);
+
+void dualPivotSortedTest(int size);
+void dualPivotReverseSortedTest(int size);
+void dualPivotRandomTest(int size);
+void dualPivotRepeatingTest(int size);
+
+
 
